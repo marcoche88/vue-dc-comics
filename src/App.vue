@@ -3,6 +3,7 @@
     <Header />
     <main>
       <Contents />
+      <ContentsBlue />
     </main>
     <footer>
       <FooterTop />
@@ -16,6 +17,7 @@ import Header from "@/components/Header.vue";
 import Contents from "@/components/Contents.vue";
 import FooterTop from "@/components/FooterTop.vue";
 import FooterBottom from "@/components/FooterBottom.vue";
+import ContentsBlue from "@/components/ContentsBlue.vue";
 
 export default {
   name: "App",
@@ -24,6 +26,7 @@ export default {
     Contents,
     FooterTop,
     FooterBottom,
+    ContentsBlue,
   },
 };
 </script>
