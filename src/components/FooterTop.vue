@@ -61,11 +61,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 #footer-top {
   height: 300px;
   background-image: url("../assets/img/footer-bg.jpg");
   overflow: hidden;
+  img {
+    height: 450px;
+  }
 }
 
 .row {
@@ -77,30 +80,22 @@ export default {
 .footer-left {
   display: flex;
   margin-top: 30px;
-}
-
-.footer-left .col {
-  margin-right: 40px;
-}
-
-.footer-left h5 {
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.footer-left h5.shop {
-  margin-top: 15px;
-}
-
-.footer-left a {
-  font-size: 10px;
+  .col {
+    margin-right: 40px;
+  }
+  h5 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  h5.shop {
+    margin-top: 15px;
+  }
+  a {
+    font-size: 10px;
+  }
 }
 
 .footer-right {
   align-self: center;
-}
-
-#footer-top img {
-  height: 450px;
 }
 </style>

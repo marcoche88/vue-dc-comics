@@ -77,12 +77,28 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "@/assets/scss/_vars.scss";
+
 header {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  a {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 97px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    &:hover,
+    &.active {
+      color: $primary-color;
+      border-bottom: 3px solid $primary-color;
+    }
+  }
 }
 
 figure {
@@ -94,26 +110,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-ul li {
-  display: inline-block;
-  height: 100%;
-}
-
-header a {
-  display: inline-block;
-  padding: 0 10px;
-  line-height: 97px;
-  font-size: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-bottom: 3px solid transparent;
-}
-
-header a:hover,
-header a.active {
-  color: rgb(48, 132, 241);
-  border-bottom: 3px solid rgb(48, 132, 241);
+  li {
+    display: inline-block;
+    height: 100%;
+  }
 }
 </style>

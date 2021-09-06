@@ -34,7 +34,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "@/assets/scss/_vars.scss";
+
 #footer-bottom {
   background-color: rgb(48, 48, 48);
   height: 100px;
@@ -53,7 +55,7 @@ export default {
   font-size: 12px;
   font-weight: bold;
   padding: 12px;
-  border: 2px solid rgb(48, 132, 241);
+  border: 2px solid $primary-color;
 }
 
 .social {
@@ -61,14 +63,13 @@ export default {
   flex-basis: 350px;
   justify-content: space-between;
   align-items: center;
-}
-
-.social a {
-  display: inline-block;
+  a {
+    display: inline-block;
+  }
 }
 
 h4 {
   text-transform: uppercase;
-  color: rgb(48, 132, 241);
+  color: $primary-color;
 }
 </style>

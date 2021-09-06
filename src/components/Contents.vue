@@ -10,14 +10,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 #contents {
   background-color: black;
   color: white;
   text-align: center;
-}
-
-#contents h3 {
-  padding: 40px;
+  h3 {
+    padding: 40px;
+  }
 }
 </style>
