@@ -4,18 +4,23 @@
     <main>
       <Contents />
     </main>
+    <footer>
+      <FooterTop />
+    </footer>
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
 import Contents from "@/components/Contents.vue";
+import FooterTop from "@/components/FooterTop.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Contents,
+    FooterTop,
   },
 };
 </script>
