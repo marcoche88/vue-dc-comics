@@ -17,7 +17,7 @@ export default {
   color: white;
   text-align: center;
   h3 {
-    padding: 40px;
+    line-height: 15vh;
   }
 }
 </style>
