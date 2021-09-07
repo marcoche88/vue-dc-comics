@@ -65,6 +65,9 @@ export default {
 #footer-top {
   height: 300px;
   background-image: url("../assets/img/footer-bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
   img {
     height: 450px;
