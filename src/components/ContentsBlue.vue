@@ -2,46 +2,10 @@
   <section id="contents-blue">
     <div class="container h-100">
       <ul class="row h-100">
-        <li class="col">
+        <li v-for="(link, index) in blueLinks" :key="index" class="col">
           <a href="#">
-            <img
-              src="@/assets/img/buy-comics-digital-comics.png"
-              alt="digital comics"
-            />
-            <span>Digital comics</span>
-          </a>
-        </li>
-        <li class="col">
-          <a href="#">
-            <img
-              src="@/assets/img/buy-comics-merchandise.png"
-              alt="merchandise"
-            />
-            <span>Dc merchandise</span>
-          </a>
-        </li>
-        <li class="col">
-          <a href="#">
-            <img
-              src="@/assets/img/buy-comics-subscriptions.png"
-              alt="subscription"
-            />
-            <span>subscription</span>
-          </a>
-        </li>
-        <li class="col">
-          <a href="#">
-            <img
-              src="@/assets/img/buy-comics-shop-locator.png"
-              alt="shop-locator"
-            />
-            <span>Comic shop locator</span>
-          </a>
-        </li>
-        <li class="col">
-          <a href="#">
-            <img src="@/assets/img/buy-dc-power-visa.svg" alt="visa" />
-            <span>Dc power visa</span>
+            <img :src="getImageUrl(link.url)" :alt="link.text" />
+            <span>{{ link.text }}</span>
           </a>
         </li>
       </ul>
@@ -52,6 +16,37 @@
 <script>
 export default {
   name: "ContentsBlue",
+  data() {
+    return {
+      blueLinks: [
+        {
+          text: "Digital comics",
+          url: "buy-comics-digital-comics.png",
+        },
+        {
+          text: "Dc merchandise",
+          url: "buy-comics-merchandise.png",
+        },
+        {
+          text: "Subscription",
+          url: "buy-comics-subscriptions.png",
+        },
+        {
+          text: "Comic shop locator",
+          url: "buy-comics-shop-locator.png",
+        },
+        {
+          text: "Dc power visa",
+          url: "buy-dc-power-visa.svg",
+        },
+      ],
+    };
+  },
+  methods: {
+    getImageUrl(url) {
+      return require("@/assets/img/" + url);
+    },
+  },
 };
 </script>
 
