@@ -55,7 +55,7 @@ export default {
 
 #contents-blue {
   background-color: $primary-color;
-  height: 120px;
+  height: 15vh;
 }
 
 ul.row {
@@ -63,26 +63,22 @@ ul.row {
   justify-content: space-between;
   align-items: center;
   margin: 0 20px;
-}
-
-ul.row li {
-  display: inline-block;
-  color: white;
-}
-
-ul.row li a {
-  display: flex;
-  color: white;
-  align-items: center;
-}
-
-a img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-a span {
-  text-transform: uppercase;
-  font-size: 12px;
+  li.col {
+    display: inline-block;
+    color: white;
+    a {
+      display: flex;
+      color: white;
+      align-items: center;
+      img {
+        height: 40px;
+        margin-right: 10px;
+      }
+      span {
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+    }
+  }
 }
 </style>

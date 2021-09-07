@@ -81,15 +81,15 @@ export default {
 @import "@/assets/scss/_vars.scss";
 
 header {
-  height: 100px;
+  height: 15vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   a {
     display: inline-block;
     padding: 0 10px;
-    line-height: 97px;
-    font-size: 10px;
+    line-height: calc(15vh - 3px);
+    font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 3px solid transparent;
@@ -102,8 +102,7 @@ header {
 }
 
 figure {
-  padding: 20px 0;
-  width: 60px;
+  width: 80px;
 }
 
 ul {

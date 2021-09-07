@@ -63,7 +63,7 @@ export default {
 
 <style scoped lang="scss">
 #footer-top {
-  height: 300px;
+  height: 40vh;
   background-image: url("../assets/img/footer-bg.jpg");
   background-position: top;
   background-repeat: no-repeat;
