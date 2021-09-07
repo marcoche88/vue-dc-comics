@@ -79,12 +79,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/scss/_vars.scss";
+@import "@/assets/scss/_mixin.scss";
 
 header {
   height: 15vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-between;
   a {
     display: inline-block;
     padding: 0 10px;
@@ -106,9 +105,7 @@ figure {
 }
 
 ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   li {
     display: inline-block;
     height: 100%;

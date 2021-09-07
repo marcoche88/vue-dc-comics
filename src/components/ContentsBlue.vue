@@ -52,6 +52,7 @@ export default {
 
 <style scoped lang="scss">
 @import "@/assets/scss/_vars.scss";
+@import "@/assets/scss/_mixin.scss";
 
 #contents-blue {
   background-color: $primary-color;
@@ -59,17 +60,14 @@ export default {
 }
 
 ul.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-between;
   margin: 0 20px;
   li.col {
     display: inline-block;
     color: white;
     a {
-      display: flex;
+      @include flex-center;
       color: white;
-      align-items: center;
       img {
         height: 40px;
         margin-right: 10px;

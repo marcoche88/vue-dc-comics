@@ -36,6 +36,7 @@ export default {
 
 <style scoped lang="scss">
 @import "@/assets/scss/_vars.scss";
+@import "@/assets/scss/_mixin.scss";
 
 #footer-bottom {
   background-color: rgb(48, 48, 48);
@@ -43,9 +44,7 @@ export default {
 }
 
 .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-between;
 }
 
 .button a {
@@ -59,10 +58,8 @@ export default {
 }
 
 .social {
-  display: flex;
+  @include flex-between;
   flex-basis: 350px;
-  justify-content: space-between;
-  align-items: center;
   a {
     display: inline-block;
   }
