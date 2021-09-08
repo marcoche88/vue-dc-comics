@@ -51,8 +51,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/_vars.scss";
-@import "@/assets/scss/_mixin.scss";
+@import "../assets/scss/_vars.scss";
+@import "../assets/scss/_mixin.scss";
 
 #contents-blue {
   background-color: $primary-color;

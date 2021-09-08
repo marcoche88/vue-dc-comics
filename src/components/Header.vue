@@ -78,8 +78,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/_vars.scss";
-@import "@/assets/scss/_mixin.scss";
+@import "../assets/scss/_vars.scss";
+@import "../assets/scss/_mixin.scss";
 
 header {
   height: 100px;
