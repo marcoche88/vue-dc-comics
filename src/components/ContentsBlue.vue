@@ -56,7 +56,7 @@ export default {
 
 #contents-blue {
   background-color: $primary-color;
-  height: 15vh;
+  height: 120px;
 }
 
 ul.row {

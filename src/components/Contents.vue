@@ -12,12 +12,11 @@ export default {
 
 <style scoped lang="scss">
 #contents {
-  height: 15vh;
   background-color: black;
   color: white;
   text-align: center;
   h3 {
-    line-height: 15vh;
+    padding: 40px;
   }
 }
 </style>

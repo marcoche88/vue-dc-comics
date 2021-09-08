@@ -82,12 +82,12 @@ export default {
 @import "@/assets/scss/_mixin.scss";
 
 header {
-  height: 15vh;
+  height: 100px;
   @include flex-between;
   a {
     display: inline-block;
     padding: 0 10px;
-    line-height: calc(15vh - 3px);
+    line-height: 97px;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;

@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <main>
+      <Hero />
       <Contents />
       <ContentsBlue />
     </main>
@@ -13,11 +14,12 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Contents from "@/components/Contents.vue";
-import FooterTop from "@/components/FooterTop.vue";
-import FooterBottom from "@/components/FooterBottom.vue";
-import ContentsBlue from "@/components/ContentsBlue.vue";
+import Header from "./components/Header.vue";
+import Contents from "./components/Contents.vue";
+import FooterTop from "./components/FooterTop.vue";
+import FooterBottom from "./components/FooterBottom.vue";
+import ContentsBlue from "./components/ContentsBlue.vue";
+import Hero from "./components/Hero.vue";
 
 export default {
   name: "App",
@@ -27,6 +29,7 @@ export default {
     FooterTop,
     FooterBottom,
     ContentsBlue,
+    Hero,
   },
 };
 </script>

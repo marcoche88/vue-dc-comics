@@ -40,7 +40,7 @@ export default {
 
 #footer-bottom {
   background-color: rgb(48, 48, 48);
-  height: 15vh;
+  height: 100px;
 }
 
 .row {
