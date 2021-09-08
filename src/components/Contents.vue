@@ -1,22 +1,23 @@
 <template>
   <section id="contents">
-    <h3>--- Contents goes here ---</h3>
+    <SeriesContents />
   </section>
 </template>
 
 <script>
+import SeriesContents from "./SeriesContents.vue";
+
 export default {
   name: "Contents",
+  components: {
+    SeriesContents,
+  },
 };
 </script>
 
 <style scoped lang="scss">
 #contents {
-  background-color: black;
+  background-color: rgb(28, 28, 28);
   color: white;
-  text-align: center;
-  h3 {
-    padding: 40px;
-  }
 }
 </style>
