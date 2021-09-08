@@ -14,7 +14,7 @@ export default {
 
 <style scoped lang="scss">
 .card {
-  flex-basis: calc(100% / 6);
+  flex-basis: 200px;
   padding-bottom: 40px;
   padding-left: 10px;
   padding-right: 10px;

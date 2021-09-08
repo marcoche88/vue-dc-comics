@@ -51,6 +51,7 @@ export default {
 .series {
   padding-top: 50px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
